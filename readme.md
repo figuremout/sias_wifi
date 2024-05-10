@@ -18,5 +18,5 @@ $ conda/pip install requests
 用 crontab 每 12h (6:00, 18:00) 自动执行脚本 （Win 用户自行搜索自动执行脚本方法）
  ```bash
 $ crontab -e
-0 6,18 * * * path_to_python path_to_connect.py >> /var/log/sias_wifi.log 2>&1
+0 6,18 * * * path_to_python path_to_connect.py >> /tmp/sias_wifi.log 2>&1
  ```
