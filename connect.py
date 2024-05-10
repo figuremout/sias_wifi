@@ -44,6 +44,7 @@ def onPwdLogin(username, password):
 
     # 发送登录请求
     url = "http://2.2.2.3/ac_portal/login.php"  # 替换为实际的登录 URL
+    print(time.ctime())
     try:
         response = requests.post(url, data=params, proxies={"http": "", "https": ""}) # noproxy
         if response.status_code == 200:
