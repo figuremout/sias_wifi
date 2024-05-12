@@ -43,7 +43,7 @@ def onPwdLogin(username, password):
     try:
         response = requests.post(url, data=params, proxies={"http": "", "https": ""}) # noproxy
         print("Status Code: ", response.status_code)
-        print(response.text)
+        print("Response: ", response.text)
     except Exception as e:
         print("Error: ", e)
 
